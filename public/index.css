@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    max-height: 720px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+p {  
+    /* line-height: 1%; */
+    font-weight: bold;
+}
+#newConnect{
+    text-align: center;
+    /* display: block; */
+    color: gray;
+    transition: opacity 1.3s ease-in-out;;
+
+}
+.hidden{
+    opacity: 0;
+    display: block;
+}
+
+.chat {
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.left, .right {
+    overflow: hidden;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.left {
+    padding: 10px;
+    max-width: 50%; 
+    float: left; 
+    clear: both;
+    background-color: #eee;
+}
+.nameColor{
+    color: rgb(233, 152, 1);
+}
+.timeFormate{
+    color: gray;
+    float: right;
+    font-size: x-small;
+}
+
+.right {
+    padding: 10px; 
+    max-width: 50%;
+    float: right;
+    clear: both; 
+    background-color: #4CAF50;
+    color: white;
+}
+
+.send {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 530px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #0d9eec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <p id="total-user"></p>
+        <div class="chat" id="chat-container"> 
+             <!-- Messages will be appended here  -->
+        </div>
+        <div class="send">
+            <form action="" id="send-container">
+                <p id="newConnect" class="hidden"></p>
+                <input type="text" placeholder="Type your message..." name="message" id="msgInput">
+                <button class="btn" onclick="sendMessage()">Send</button>
+            </form>
+        </div>
+         
+    </div>
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="client.js"></script>
+
+</body>
+
+</html>
